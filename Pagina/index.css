@@ -1,0 +1,71 @@
+ /* definiendo el cuerpo de mi web*/ 
+
+body{
+    background-color: #c0f9e6;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+} 
+ /* defono el contenedor del menu principal*/ 
+.gridmenu{
+    display: grid; /*establesco que mi barra de navegacion es con el metodo grid */ 
+    grid-template-columns: auto auto auto auto;
+    width: 0px auto;
+    height: 75px;
+    gap: 10px;
+ } 
+
+ /* centro y le doy color a mi menu*/ 
+.menu{
+    line-height: 70px;
+    text-align: center;
+    border: 3px solid #8ff9d6;
+    background-color: rgb(163, 253, 223);
+}
+
+ /*hoover para mi menu */ 
+.menu:hover{
+  background-color: #70ffcf;
+}
+
+
+  /*defino el contenedor de imagen y su tamaño */ 
+.contenedor-imagen { 
+    width: 0px auto;
+    height: 800;
+    margin-top: 20px;
+} 
+
+.imagenden{ 
+    object-fit: cover;
+    width:100%;
+    height:100%;
+ }
+
+  /*le doy forma a los ultimosa posteos */  
+
+
+.contenedor-contenedores-posts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+    width: 0px auto;
+    margin-top: 20px;
+  }
+  .contenedor-de-posts {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid Gainsboro;
+    padding: 10px;
+  }
+
+
+  .imagen-posts{
+    width:100%;
+    height:600%;
+}
+
+ /*hoover para mis posts */ 
+ .contenedor-de-posts:hover {
+  background-color: #70ffcf;
+}
